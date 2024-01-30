@@ -1,0 +1,9 @@
+<footer class="footer "{% if feature_image %} style="background-image: url({{ feature_image }});"{% endif %}>
+  <div class="container">
+    <div class="copyright  typeset">
+      <p>&copy; BiaPy {{ site.time | date: '%Y' }}</p>
+    </div>
+
+    {% include nav-footer.html %}
+  </div>
+</footer>

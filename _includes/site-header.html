@@ -1,0 +1,16 @@
+{% assign feature_text = page.feature_text %}
+{% assign feature_image = page.feature_image %}
+{% if page.collectionpage %}
+  {% assign collectiondata = site.collections | where: "label", page.collectionpage | first %}
+  {% assign feature_text = collectiondata.feature_text %}
+  {% assign feature_image = collectiondata.feature_image %}
+{% endif %}
+
+<link href="/assets/css/fontawesome.all.min.css" rel="stylesheet">
+
+<header class="header feature "{% if feature_image %} style="background-image: url({{ feature_image }});"{% endif %}>
+  <div class="header-content" >
+        {% if site.logo %}{% include site-logo.html %}{% endif %}
+        {% include nav-header.html %}
+  </div>
+</header>
