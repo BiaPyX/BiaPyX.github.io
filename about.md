@@ -1,6 +1,6 @@
 ---
 layout: centered_article
-feature_image: /assets/images/banner/banner_back.jpg
+feature_image: ../assets/images/banner/banner_back.jpg
 ---
 
 ### What's BiaPy?
@@ -18,7 +18,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/ignacio-arganda-adult.jpg">
+                        <img src="../assets/images/team/ignacio-arganda-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -29,7 +29,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/ignacio-arganda-kid.jpg">
+                    <img src="../assets/images/team/ignacio-arganda-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -44,7 +44,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/daniel-franco-adult.jpg">
+                        <img src="../assets/images/team/daniel-franco-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -55,7 +55,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/daniel-franco-kid.jpg">
+                    <img src="../assets/images/team/daniel-franco-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -70,7 +70,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/lenka-backova-adult.jpg">
+                        <img src="../assets/images/team/lenka-backova-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -81,7 +81,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/lenka-backova-kid.jpg">
+                    <img src="../assets/images/team/lenka-backova-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -96,7 +96,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/aitor-gonzalez-adult.jpg">
+                        <img src="../assets/images/team/aitor-gonzalez-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -107,7 +107,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/aitor-gonzalez-kid.jpg">
+                    <img src="../assets/images/team/aitor-gonzalez-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -122,7 +122,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/arrate-munoz-adult.jpg">
+                        <img src="../assets/images/team/arrate-munoz-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -133,7 +133,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/arrate-munoz-kid.jpg">
+                    <img src="../assets/images/team/arrate-munoz-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -148,7 +148,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/jesus-angel-andres-san-roman-adult.jpg">
+                        <img src="../assets/images/team/jesus-angel-andres-san-roman-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -159,7 +159,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/jesus-angel-andres-san-roman-kid.jpg">
+                    <img src="../assets/images/team/jesus-angel-andres-san-roman-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -174,7 +174,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/pedro-javier-gomez-adult.jpg">
+                        <img src="../assets/images/team/pedro-javier-gomez-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -185,7 +185,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/pedro-javier-gomez-kid.jpg">
+                    <img src="../assets/images/team/pedro-javier-gomez-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -200,7 +200,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/luisma-escudero-adult.jpg">
+                        <img src="../assets/images/team/luisma-escudero-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -211,7 +211,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/luisma-escudero-kid.jpg">
+                    <img src="../assets/images/team/luisma-escudero-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -226,7 +226,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/ivan-hidalgo-adult.jpg">
+                        <img src="../assets/images/team/ivan-hidalgo-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -237,7 +237,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/ivan-hidalgo-kid.jpg">
+                    <img src="../assets/images/team/ivan-hidalgo-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -252,7 +252,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/donglai-wei-adult.jpg">
+                        <img src="../assets/images/team/donglai-wei-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -263,7 +263,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/donglai-wei-kid.jpg">
+                    <img src="../assets/images/team/donglai-wei-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -278,7 +278,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/clement-caporal-adult.jpg">
+                        <img src="../assets/images/team/clement-caporal-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -289,7 +289,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/clement-caporal-kid.jpg">
+                    <img src="../assets/images/team/clement-caporal-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
@@ -304,7 +304,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="/assets/images/team/no-photo.jpg">
+                        <img src="../assets/images/team/no-photo.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -315,7 +315,7 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="/assets/images/team/no-photo.jpg">
+                    <img src="../assets/images/team/no-photo.jpg">
                 </figure>
             </div>
             <div class="team-member__body">

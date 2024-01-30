@@ -1,16 +1,16 @@
 ---
-feature_image: /assets/images/banner/banner_back.jpg
+feature_image: ../assets/images/banner/banner_back.jpg
 carousels:
   - images: 
-    - image: /assets/images/gui1.png
-    - image: /assets/images/gui2.png
-    - image: /assets/images/gui3.png
-    - image: /assets/images/gui4.png
+    - image: ../assets/images/gui1.png
+    - image: ../assets/images/gui2.png
+    - image: ../assets/images/gui3.png
+    - image: ../assets/images/gui4.png
 ---
 
 <div class="presentation-frame centered">
     <div class="index-page-logo">
-        <img id="main-logo" src="/assets/logos/logo_1000_adjusted.jpg" alt="QuPath Users">
+        <img id="main-logo" src="../assets/logos/logo_1000_adjusted.jpg" alt="BiaPy logo">
     </div>
     <div class="index-page-message">
         <h1>BiaPy</h1>
@@ -214,7 +214,7 @@ conda activate BiaPy_env
     <ul class="feature-icons">
         <li>
             <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to learn more about biapy" class="icons-color blue1-color">
-                    <img src="/assets/images/icons/file-lines-regular.svg" class="docs-icon" alt="docs icon">
+                    <img src="../assets/images/icons/file-lines-regular.svg" class="docs-icon" alt="docs icon">
             </a>
             <h4><a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to learn more about biapy">Docs</a>
                     </h4>
@@ -222,7 +222,7 @@ conda activate BiaPy_env
         </li>
         <li>
             <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to access discussions on the image.sc forum" class="icons-color blue2-color">
-                    <img src="/assets/images/icons/comments-regular.svg" class="comment-icon" alt="commnets icon">
+                    <img src="../assets/images/icons/comments-regular.svg" class="comment-icon" alt="commnets icon">
             </a>
             <h4><a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to access discussions on the image.sc forum">Discuss</a>
                     </h4>
@@ -230,7 +230,7 @@ conda activate BiaPy_env
         </li>
         <li>
             <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to the biapy github code base" class="icons-color blue3-color">
-                    <img src="/assets/images/icons/code-solid.svg" class="code-icon" alt="code icon">
+                    <img src="../assets/images/icons/code-solid.svg" class="code-icon" alt="code icon">
             </a>
             <h4><a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to the biapy github code base">Develop</a>
                     </h4>

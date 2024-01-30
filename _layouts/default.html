@@ -29,7 +29,7 @@
 
     <link rel="manifest" href="{{ "/manifest.json" | relative_url }}">
     <meta name="theme-color" content="{{ site.manifest.theme_color | default: '#242e2b' }}"/>
-    <link rel="stylesheet" href="{{ "/assets/styles.css" | relative_url }}">
+    <link rel="stylesheet" href="{{ "../assets/styles.css" | relative_url }}">
 
     {% if site.favicons or site.avatarurl %}{% include site-favicons.html %}{% endif %}
 
@@ -46,7 +46,7 @@
 
     {% if site.service_worker != false %}{% include site-sw.html %}{% endif %}
 
-    <script src="/assets/scripts/tabs.js"></script>
+    <script src="../assets/scripts/tabs.js"></script>
   </body>
 
 </html>

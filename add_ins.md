@@ -1,6 +1,6 @@
 ---
 layout: centered_article
-feature_image: /assets/images/banner/banner_back.jpg
+feature_image: ../assets/images/banner/banner_back.jpg
 ---
 
 <h4> <a id="open_terminal" href="#open_terminal">Open a terminal</a> </h4>
