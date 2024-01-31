@@ -15,7 +15,7 @@ carousels:
     <div class="index-page-message">
         <h1>BiaPy</h1>
         <h3>Bioimage analysis pipelines in Python</h3>
-        <a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.3.0" target="_blank" rel="noopener noreferrer">Release notes v3.3.0</a>
+        <a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.3.1" target="_blank" rel="noopener noreferrer">Release notes v3.3.1</a>
     </div>
 </div>
 
@@ -50,6 +50,8 @@ carousels:
         </div>
         <p style="margin-top: 2rem;">
         Please install <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> to use the GUI following <a id="gui_docker_inst_bn" href="" target="_blank" rel="noopener noreferrer">these instructions</a>. 
+        <br>
+        Find a instructions on how to use the GUI <a href="https://www.youtube.com/watch?v=Gnm-VsZQ6Cc&t=41m51s" target="_blank" rel="noopener noreferrer">in this video</a>.
         </p>
     </div>
     <div style="width: 60%; float:left">
@@ -133,7 +135,7 @@ conda activate BiaPy_env
 
 {% tabs command_line_installation %}
 
-{% tab command_line_installation Option 1: Clone + Install %}
+{% tab command_line_installation Option 2: Clone + Install %}
 
 To clone the repository you will need to install <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git</a>, a free and open source distributed version control system. Git will allow you to easily download the code with a single command. You can download and install it <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">here</a>. For detailed installation instructions based on your operating system, please see the following links: <a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreferrer">Windows</a>, <a href="https://git-scm.com/download/mac" target="_blank" rel="noopener noreferrer">macOS</a> and <a href="https://git-scm.com/download/linux" target="_blank" rel="noopener noreferrer">Linux</a>. 
 
@@ -147,7 +149,7 @@ This will create a folder called ``BiaPy`` that contains all the files of the <a
 
 {% tabs command_line_CUDA_installation %}
 
-{% tab command_line_installation Option 2: pip install %}
+{% tab command_line_installation Option 1: pip install %}
 
 Then you will need to install <a href="https://pypi.org/project/biapy/" target="_blank" rel="noopener noreferrer">BiaPy package</a>: 
 
@@ -217,24 +219,32 @@ conda activate BiaPy_env
                     <img src="../assets/images/icons/file-lines-regular.svg" class="docs-icon" alt="docs icon">
             </a>
             <h4><a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to learn more about biapy">Docs</a>
-                    </h4>
-                    <p class="three-icons-text">Find BiaPy step-by-step guides, video tutorials and more on <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">ReadTheDocs</a></p>
+            </h4>
+            <p class="three-icons-text">Find BiaPy step-by-step guides, video tutorials and more on <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">ReadTheDocs</a></p>
         </li>
         <li>
             <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to access discussions on the image.sc forum" class="icons-color blue2-color">
                     <img src="../assets/images/icons/comments-regular.svg" class="comment-icon" alt="commnets icon">
             </a>
             <h4><a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to access discussions on the image.sc forum">Discuss</a>
-                    </h4>
-                    <p class="three-icons-text">Join other BiaPy users and search thousands of discussions on <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer">image.sc</a></p>
+            </h4>
+            <p class="three-icons-text">Join other BiaPy users and search discussions on <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer">image.sc</a></p>
         </li>
         <li>
             <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to the biapy github code base" class="icons-color blue3-color">
                     <img src="../assets/images/icons/code-solid.svg" class="code-icon" alt="code icon">
             </a>
             <h4><a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to the biapy github code base">Develop</a>
-                    </h4>
-                    <p class="three-icons-text">Check out BiaPy's source code on <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            </h4>
+            <p class="three-icons-text">Check out BiaPy's source code on <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        </li>
+        <li>
+            <a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to the biapy FAQ & Troubleshooting section" class="icons-color blue4-color">
+                    <img src="../assets/images/icons/troubleshooting.svg" class="code-icon" alt="code icon">
+            </a>
+            <h4><a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to the biapy FAQ & Troubleshooting section">Troubleshooting</a>
+            </h4>
+            <p class="three-icons-text">Check out usage tips and documented errors in our <a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer">FAQ & Troubleshooting</a> section</p>
         </li>
     </ul>
 </div>

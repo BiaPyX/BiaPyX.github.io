@@ -1,6 +1,6 @@
 ---
 layout: centered_article
-feature_image: assets/images/banner/banner_back.jpg
+feature_image: ../assets/images/banner/banner_back.jpg
 ---
 
 ## Metrics
@@ -98,4 +98,4 @@ User metrics, analytics and service uptime
 
 #### User metrics 
 
-<iframe class="last_item" width="1920" height="900" src="https://lookerstudio.google.com/embed/reporting/cc158ce7-efc6-4c13-a8a1-3cbbbe60a146/page/7floD" frameborder="0" style="border:0" allowfullscreen scrolling="no" sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>
+<iframe class="last_item" width="1920" height="1000" src="https://lookerstudio.google.com/embed/reporting/cc158ce7-efc6-4c13-a8a1-3cbbbe60a146/page/7floD" frameborder="0" style="border:0" scrolling="no" sandbox="allow-storage-access-by-user-activation allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox"></iframe>

@@ -86,7 +86,7 @@ The library provides an easy way to create image processing pipelines that are c
             </div>
             <div class="team-member__body">
                 <span class="team-member__title">Lenka Backová</span><br>
-                <span class="team-member__subtitle">Wanted to be a superhero</span><br>
+                <span class="team-member__subtitle">Wanted to be a marine biologist</span><br>
             </div>
             </div>
         </div>
@@ -112,7 +112,7 @@ The library provides an easy way to create image processing pipelines that are c
             </div>
             <div class="team-member__body">
                 <span class="team-member__title">Aitor Gonzalez-Marfil</span><br>
-                <span class="team-member__subtitle">Wanted to be a superhero</span><br>
+                <span class="team-member__subtitle">Wanted to be a veterinarian</span><br>
             </div>
             </div>
         </div>

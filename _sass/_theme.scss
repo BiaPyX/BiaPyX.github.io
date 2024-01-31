@@ -72,6 +72,7 @@ body > footer {
 
 .footer {
   color: $linkColour;
+  background-size: cover;
   a {
     color: $linkColour;
     &:hover {
@@ -109,6 +110,7 @@ body > footer {
   position: sticky;
   top: 0;
   z-index: 999;
+  background-size: cover;
 }
 
 .header-content {
@@ -182,6 +184,8 @@ body > footer {
     }
     a {
       color: $linkColour;
+      font-weight: bold;
+      font-size: 16px;
       &:active,
       &:hover {
         color: $selectedColour;
@@ -655,6 +659,10 @@ ul.feature-icons {
 }
 .feature-icons li .blue3-color {
   background: $blue3-three-buttons;
+  transition: background-color 0.5s ease-out 30ms;
+}
+.feature-icons li .blue4-color {
+  background: $blue4-three-buttons;
   transition: background-color 0.5s ease-out 30ms;
 }
 .feature-icons li .icons-color:hover {
