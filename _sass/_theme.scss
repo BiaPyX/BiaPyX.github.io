@@ -594,6 +594,9 @@ select {
     max-width: 100%;
     max-height: 100%
 }
+.team-member__body {
+  text-align: center;
+}
 .team-member__title {
     font-size: 14px;
     margin-bottom: .25rem
@@ -610,7 +613,7 @@ select {
     -ms-flex: 0 0 16.666667%;
     flex: 0 0 16.666667%;
     max-width: 16.666667%;
-    padding: 0 15px;
+    padding: 0 10px;
     text-align: center
 }
 .img-holder img {
