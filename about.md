@@ -294,7 +294,7 @@ The library provides an easy way to create image processing pipelines that are c
             </div>
             <div class="team-member__body">
                 <span class="team-member__title">Clément Caporal</span><br>
-                <span class="team-member__subtitle">Wanted to be a superhero</span><br>
+                <span class="team-member__subtitle">Never knew what I wanted to do!</span><br>
             </div>
             </div>
         </div>

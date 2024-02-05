@@ -31,7 +31,7 @@ carousels:
 {% tab installation GUI %}
 <div style="height: 50%">
     <div style="width: 40%; float:left; text-align: center;">
-        <a id="download-bn" class="button" style="margin-top: 2rem;" href="https://github.com/BiaPyX/BiaPy-GUI/raw/main/dist-win/BiaPy.exe"  target="_blank" rel="noopener noreferrer">
+        <a id="download-bn" class="button" style="margin-top: 2rem;" href="https://drive.google.com/uc?export=download&id=1iV0wzdFhpCpBCBgsameGyT3iFyQ6av5o"  target="_blank" rel="noopener noreferrer">
             <svg id="download-bn-icon" role="img" width="32" height="32" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
             &nbsp;&nbsp;Download
         </a>
@@ -289,13 +289,13 @@ for (let i = 0; i < OSs.length; i++) {
     const elem2 = document.getElementById("download-bn"+(i+2));
     if (OSs[i] === "linux") {
         elem.childNodes[0].setAttribute('d', linux_path);
-        elem2.setAttribute('href', "https://drive.google.com/file/d/1iV0wzdFhpCpBCBgsameGyT3iFyQ6av5o/view?usp=drive_link");
+        elem2.setAttribute('href', "https://drive.google.com/uc?export=download&id=13jllkLTR6S3yVZLRdMwhWUu7lq3HyJsD");
     } else if (OSs[i] === "windows") {
         elem.childNodes[0].setAttribute('d', win_path);
-        elem2.setAttribute('href', "https://drive.google.com/file/d/13jllkLTR6S3yVZLRdMwhWUu7lq3HyJsD/view?usp=drive_link");
+        elem2.setAttribute('href', "https://drive.google.com/uc?export=download&id=1iV0wzdFhpCpBCBgsameGyT3iFyQ6av5o");
     } else {
         elem.childNodes[0].setAttribute('d', mac_path);
-        elem2.setAttribute('href', "https://drive.google.com/file/d/1fIpj9A8SWIN1fABEUAS--DNhOHzqSL7f/view?usp=drive_link");
+        elem2.setAttribute('href', "https://drive.google.com/uc?export=download&id=1fIpj9A8SWIN1fABEUAS--DNhOHzqSL7f");
     } 
 }
 
