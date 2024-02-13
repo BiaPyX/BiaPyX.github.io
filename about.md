@@ -304,7 +304,7 @@ The library provides an easy way to create image processing pipelines that are c
             <div class="card-front">
                 <div class="team-member__image">
                     <figure class="img-holder">
-                        <img src="../assets/images/team/no-photo.jpg">
+                        <img src="../assets/images/team/anatole-chessel-adult.jpg">
                     </figure>
                 </div>
             <div class="team-member__body">
@@ -315,12 +315,12 @@ The library provides an easy way to create image processing pipelines that are c
         <div class="card-back">
             <div class="team-member__image">
                 <figure class="img-holder">
-                    <img src="../assets/images/team/no-photo.jpg">
+                    <img src="../assets/images/team/anatole-chessel-kid.jpg">
                 </figure>
             </div>
             <div class="team-member__body">
                 <span class="team-member__title">Anatole Chessel</span><br>
-                <span class="team-member__subtitle">Wanted to be a superhero</span><br>
+                <span class="team-member__subtitle">Wanted to be a long time ago and/or in a far far away galaxy...</span><br>
             </div>
             </div>
         </div>

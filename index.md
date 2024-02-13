@@ -15,7 +15,7 @@ carousels:
     <div class="index-page-message">
         <h1>BiaPy</h1>
         <h3>Bioimage analysis pipelines in Python</h3>
-        <a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.3.1" target="_blank" rel="noopener noreferrer">Release notes v3.3.1</a>
+        <a href="https://github.com/BiaPyX/BiaPy/releases/latest" target="_blank" rel="noopener noreferrer">Latest release notes</a>
     </div>
 </div>
 
