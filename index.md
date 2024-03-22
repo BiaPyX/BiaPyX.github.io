@@ -16,6 +16,7 @@ carousels:
         <h1>BiaPy</h1>
         <h3>Bioimage analysis pipelines in Python</h3>
         <a href="https://github.com/BiaPyX/BiaPy/releases/latest" target="_blank" rel="noopener noreferrer">Latest release notes</a>
+        <p dir="auto">🔥<strong>NEWS</strong>🔥: Check out our last <a href="https://www.biorxiv.org/content/10.1101/2024.02.03.576026v1"  target="_blank" rel="noopener noreferrer"><strong>bioRxiv preprint</strong></a>!  </p>
     </div>
 </div>
 
@@ -25,6 +26,7 @@ carousels:
 <!-- <h4>Installation</h4>
 
 <p>There are several options available for executing BiaPy. Choose the method that aligns best with your proficiency, proceed by following the subsequent steps:</p> -->
+
 
 {% tabs installation %}
 
@@ -129,7 +131,7 @@ Docker Engine is available for Windows, macOS, and Linux, through Docker Desktop
 To use BiaPy via the command line, you will need to set up a ``conda`` environment. To do this, you will first need to install <a href="https://www.anaconda.com/" target="_blank" rel="noopener noreferrer">Anaconda/Miniconda</a>. For detailed installation instructions based on your operating system, please see the following links: <a href="https://docs.anaconda.com/anaconda/install/windows/" target="_blank" rel="noopener noreferrer">Windows</a>, <a href="https://docs.anaconda.com/anaconda/install/mac-os/" target="_blank" rel="noopener noreferrer">macOS</a> and <a href="https://docs.anaconda.com/anaconda/install/linux/" target="_blank" rel="noopener noreferrer">Linux</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
 
 ```bash
-conda create -n BiaPy_env python=3.8
+conda create -n BiaPy_env python=3.10
 conda activate BiaPy_env
 ```
 
