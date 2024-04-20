@@ -1,7 +1,7 @@
 ---
 layout: centered_article
 title: Stable deep neural network architectures
-docs_url: https://biapy.readthedocs.io/en/latest/workflows/semantic_segmentation.html
+docs_url: https://biapy.readthedocs.io/en/latest/tutorials/semantic_seg/stable.html
 categories:
 - Semantic segmentation
 ---

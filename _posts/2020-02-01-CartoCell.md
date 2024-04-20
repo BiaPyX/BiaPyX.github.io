@@ -1,7 +1,7 @@
 ---
 layout: centered_article
 title: CartoCell
-docs_url: https://biapy.readthedocs.io/en/latest/tutorials/mitoem.html
+docs_url: https://biapy.readthedocs.io/en/latest/tutorials/instance_seg/cartocell.html
 categories:
 - Instance segmentation
 ---
