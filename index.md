@@ -128,16 +128,99 @@ Docker Engine is available for Windows, macOS, and Linux, through Docker Desktop
 
 {% tab installation Command line %}
 
-To use BiaPy via the command line, you will need to set up a ``conda`` environment. To do this, you will first need to install <a href="https://www.anaconda.com/" target="_blank" rel="noopener noreferrer">Anaconda/Miniconda</a>. For detailed installation instructions based on your operating system, please see the following links: <a href="https://docs.anaconda.com/anaconda/install/windows/" target="_blank" rel="noopener noreferrer">Windows</a>, <a href="https://docs.anaconda.com/anaconda/install/mac-os/" target="_blank" rel="noopener noreferrer">macOS</a> and <a href="https://docs.anaconda.com/anaconda/install/linux/" target="_blank" rel="noopener noreferrer">Linux</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
+You have three different options to install BiaPy. Choose one or another depending on your preferences:
+
+{% tabs command_line_installation %}
+
+{% tab command_line_installation Option 1: Conda + pip %}
+
+To use BiaPy via the command line, you will need to set up a ``conda`` environment. To do this, you will first need to install <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
 
 ```bash
 conda create -n BiaPy_env python=3.10
 conda activate BiaPy_env
 ```
 
-{% tabs command_line_installation %}
+Then you will need to install <a href="https://pypi.org/project/biapy/" target="_blank" rel="noopener noreferrer">BiaPy package</a> and <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a>: 
 
-{% tab command_line_installation Option 2: Clone + Install %}
+```bash
+pip install biapy
+
+# Then install Pytorch 2.3.1 + CUDA 11.8
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118 
+pip install timm torchmetrics pytorch-msssim
+```
+
+The PyPI package does not install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> because there is no option to build that package specifying exactly the CUDA version you want to use. There are a few solutions to set up ``pyproject.toml`` with poetry and specify the CUDA version, as discussed <a href="https://github.com/python-poetry/poetry/issues/6409" target="_blank" rel="noopener noreferrer">here</a>, but then PyPI package can not be built (as stated <a href="https://peps.python.org/pep-0440/#direct-references" target="_blank" rel="noopener noreferrer">here</a>).
+
+<!-- command_line_installation option 1 -->
+{% endtab %}
+
+{% tab command_line_installation Option 2: Mamba %}
+
+Before you begin, ensure you have <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> installed. <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> is a faster alternative to <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a> and can be used to manage your ``conda`` environments. Install ``mamba`` in the base ``conda`` environment, allowing you to use it across all your environments.
+
+
+If you don't have ``conda`` installed you can download <a href="https://github.com/conda-forge/miniforge#mambaforge" target="_blank" rel="noopener noreferrer">the miniforge installer</a> specific to your OS and run it. Otherwise, if you have ``conda`` already installed just type:
+
+```bash
+conda install mamba -n base -c conda-forge
+```
+
+Afterwards, create a new <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a> environment with Python 3.10: 
+
+```bash
+mamba create -n BiaPy_env python=3.10
+mamba activate BiaPy_env
+```
+
+Now you need to install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> and related packages. Double check <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch's official page</a> for its specific installation. For example, to install the lastest version of <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> with ``conda`` installation in Windows OS under cuda 12.1: 
+
+```bash
+mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+```
+
+Alternatively, for macOS it would be like this:
+
+```bash
+mamba install pytorchpytorch torchvision torchaudio -c pytorch
+```
+
+Then, add extra pytorch related packages: 
+
+```bash
+mamba timm torchmetrics
+```
+
+Install BiaPy Dependencies: 
+
+```bash    
+mamba install pytz asciitree tzdata typer tqdm torchinfo tifffile threadpoolctl six Shapely scipy ruamel.yaml.clib pyparsing protobuf numcodecs marshmallow lazy_loader kiwisolver joblib imageio h5py fonttools fastremap fasteners cycler contourpy zarr=2.16.1 scikit-learn=1.4.0 scikit-image=0.21.0 ruamel.yaml python-dateutil pydot=1.4.2 marshmallow-union marshmallow-jsonschema pandas matplotlib bioimageio.spec=0.4.9 xarray imgaug bioimageio.core=0.5.9
+```
+
+Install packages not available on conda-forge, so install it via pip: 
+
+```bash 
+pip install fill-voids pytorch_msssim opencv-python==4.8.0.76 opencv-python-headless imagecodecs==2024.1.1 numpy==1.25.2 pooch==1.8.1 tensorboardX==2.6.2.2 yacs==0.1.8 edt==2.3.2
+```
+
+Install BiaPy: 
+
+```bash
+pip install --no-deps biapy
+```
+
+<!-- command_line_installation option 2 -->
+{% endtab %}
+
+{% tab command_line_installation Option 3: Developer %}
+
+Set up a ``conda`` environment first by installing <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
+
+```bash
+conda create -n BiaPy_env python=3.10
+conda activate BiaPy_env
+```
 
 To clone the repository you will need to install <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git</a>, a free and open source distributed version control system. Git will allow you to easily download the code with a single command. You can download and install it <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">here</a>. For detailed installation instructions based on your operating system, please see the following links: <a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreferrer">Windows</a>, <a href="https://git-scm.com/download/mac" target="_blank" rel="noopener noreferrer">macOS</a> and <a href="https://git-scm.com/download/linux" target="_blank" rel="noopener noreferrer">Linux</a>. 
 
@@ -151,18 +234,7 @@ This will create a folder called ``BiaPy`` that contains all the files of the <a
 
 {% tabs command_line_CUDA_installation %}
 
-{% tab command_line_installation Option 1: pip install %}
-
-Then you will need to install <a href="https://pypi.org/project/biapy/" target="_blank" rel="noopener noreferrer">BiaPy package</a>: 
-
-```bash
-pip install biapy
-```
-
-{% endtab %}
-
 {% tab command_line_CUDA_installation CUDA 11.8 %}
-
 ```bash
 # Install Pytorch and GPU dependencies
 conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
@@ -170,17 +242,22 @@ cd BiaPy
 pip install --editable .
 ```
 {% endtab %}
-{% tab command_line_CUDA_installation CUDA 10.2 %}
 
+{% tab command_line_CUDA_installation CUDA 10.2 %}
 ```bash
 # Install Pytorch and GPU dependencies
 conda install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
 cd BiaPy
 pip install --editable .
 ```
+{% endtab %}
+<!-- command_line_CUDA_installation -->
+{% endtabs %} 
 
+<!-- command_line_installation option 3 -->
 {% endtab %}
 
+<!-- command_line_installation -->
 {% endtabs %}
 
 Verify installation: 
@@ -192,20 +269,10 @@ python -c 'import torch; print(torch.cuda.is_available())'
 >>> True
 ```
 
-From now on, to run BiaPy you will need to just activate the environment:
-
-```bash
-conda activate BiaPy_env
-``` 
-
+<!-- installation Command line  -->
 {% endtab %}
 
-
-
-{% endtabs %}
-
-{% endtab %}
-
+<!-- end all tabs -->
 {% endtabs %}
 
 </div>
