@@ -146,8 +146,13 @@ Then you will need to install <a href="https://pypi.org/project/biapy/" target="
 ```bash
 pip install biapy
 
-# Then install Pytorch 2.3.1 + CUDA 11.8
+# To install with GPU support: Pytorch 2.3.1 + CUDA 11.8
 pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118 
+
+# Only CPU support: Pytorch 2.3.1 
+pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu
+
+# Finally install some packages that rely on the Pytorch installation
 pip install timm torchmetrics pytorch-msssim
 ```
 
