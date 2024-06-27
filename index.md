@@ -81,7 +81,7 @@ We have two container prepared to run BiaPy, one for the actual NVIDIA driver ve
                 <i class="fa-brands fa-docker card-icon biapy-colour"></i>
                 <table>
                     <tr>
-                        <td>Pytorch</td> <td>2.1</td>
+                        <td>Pytorch</td> <td>2.2</td>
                     </tr>
                     <tr>
                         <td>CUDA</td> <td>11.8</td>
@@ -146,11 +146,11 @@ Then you will need to install <a href="https://pypi.org/project/biapy/" target="
 ```bash
 pip install biapy
 
-# To install with GPU support: Pytorch 2.3.1 + CUDA 11.8
-pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cu118 
+# To install with GPU support: Pytorch 2.2.0 + CUDA 11.8
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118 
 
-# Only CPU support: Pytorch 2.3.1 
-pip install torch==2.3.1 torchvision==0.18.1 torchaudio==2.3.1 --index-url https://download.pytorch.org/whl/cpu
+# Only CPU support: Pytorch 2.2.0 
+pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cpu
 
 # Finally install some packages that rely on the Pytorch installation
 pip install timm torchmetrics pytorch-msssim
@@ -179,7 +179,7 @@ mamba create -n BiaPy_env python=3.10
 mamba activate BiaPy_env
 ```
 
-Now you need to install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> and related packages. Double check <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch's official page</a> for its specific installation. For example, to install the lastest version of <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> with ``conda`` installation in Windows OS under cuda 12.1: 
+Now you need to install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> and related packages. Double check <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch's official page</a> for its specific installation. For example, to install the lastest version of <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> with ``conda`` installation in Windows OS under CUDA 12.1: 
 
 ```bash
 mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
@@ -269,7 +269,7 @@ Verify installation:
 
 ```bash
 python -c 'import torch; print(torch.__version__)'
->>> 2.1.0
+>>> 2.2.0
 python -c 'import torch; print(torch.cuda.is_available())'
 >>> True
 ```
