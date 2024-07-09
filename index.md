@@ -241,19 +241,23 @@ This will create a folder called ``BiaPy`` that contains all the files of the <a
 
 {% tab command_line_CUDA_installation CUDA 11.8 %}
 ```bash
-# Install Pytorch and GPU dependencies
-pip install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
 cd BiaPy
 pip install --editable .
+
+# Install Pytorch and GPU dependencies
+pip install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia
+pip install timm torchmetrics pytorch-msssim
 ```
 {% endtab %}
 
 {% tab command_line_CUDA_installation CUDA 10.2 %}
 ```bash
-# Install Pytorch and GPU dependencies
-pip install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
 cd BiaPy
 pip install --editable .
+
+# Install Pytorch and GPU dependencies
+pip install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
+pip install timm torchmetrics pytorch-msssim
 ```
 {% endtab %}
 <!-- command_line_CUDA_installation -->
