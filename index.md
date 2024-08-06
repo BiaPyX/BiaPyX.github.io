@@ -146,14 +146,14 @@ Then you will need to install <a href="https://pypi.org/project/biapy/" target="
 ```bash
 pip install biapy
 
-# To install with GPU support: Pytorch 2.2.0 + CUDA 11.8
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118 
+# To install with GPU support: Pytorch 2.4.0 + CUDA 11.8
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
 
-# Only CPU support: Pytorch 2.2.0 
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cpu
+# Only CPU support: Pytorch 2.4.0 
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cpu
 
 # Finally install some packages that rely on the Pytorch installation
-pip install timm torchmetrics pytorch-msssim
+pip install timm pytorch-msssim torchmetrics[image]
 ```
 
 The PyPI package does not install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> because there is no option to build that package specifying exactly the CUDA version you want to use. There are a few solutions to set up ``pyproject.toml`` with poetry and specify the CUDA version, as discussed <a href="https://github.com/python-poetry/poetry/issues/6409" target="_blank" rel="noopener noreferrer">here</a>, but then PyPI package can not be built (as stated <a href="https://peps.python.org/pep-0440/#direct-references" target="_blank" rel="noopener noreferrer">here</a>).
@@ -200,7 +200,7 @@ mamba timm torchmetrics
 Install BiaPy Dependencies: 
 
 ```bash    
-mamba install pytz asciitree tzdata typer tqdm torchinfo tifffile threadpoolctl six Shapely scipy ruamel.yaml.clib pyparsing protobuf numcodecs marshmallow lazy_loader kiwisolver joblib imageio h5py fonttools fastremap fasteners cycler contourpy zarr=2.16.1 scikit-learn=1.4.0 scikit-image=0.21.0 ruamel.yaml python-dateutil pydot=1.4.2 marshmallow-union marshmallow-jsonschema pandas matplotlib bioimageio.spec=0.4.9 xarray imgaug bioimageio.core=0.5.9
+mamba install pytz asciitree tzdata typer tqdm torchinfo tifffile threadpoolctl six Shapely scipy ruamel.yaml.clib pyparsing protobuf numcodecs lazy_loader kiwisolver joblib h5py fonttools fastremap fasteners cycler contourpy zarr=2.16.1 scikit-learn=1.4.0 scikit-image ruamel.yaml python-dateutil pydot=1.4.2 pandas matplotlib bioimageio.spec=0.4.9 xarray imgaug bioimageio.core=0.6.7
 ```
 
 Install packages not available on conda-forge, so install it via pip: 
@@ -245,8 +245,8 @@ cd BiaPy
 pip install --editable .
 
 # Install Pytorch and GPU dependencies
-pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118 
-pip install timm torchmetrics pytorch-msssim
+pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
+pip install timm pytorch-msssim torchmetrics[image]
 ```
 {% endtab %}
 
@@ -257,7 +257,7 @@ pip install --editable .
 
 # Install Pytorch and GPU dependencies
 pip install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
-pip install timm torchmetrics pytorch-msssim
+pip install timm pytorch-msssim torchmetrics[image]
 ```
 {% endtab %}
 <!-- command_line_CUDA_installation -->
@@ -273,7 +273,7 @@ Verify installation:
 
 ```bash
 python -c 'import torch; print(torch.__version__)'
->>> 2.2.0
+>>> 2.4.0
 python -c 'import torch; print(torch.cuda.is_available())'
 >>> True
 ```
