@@ -96,8 +96,6 @@ favicons: # Favicons are also used in the manifest file. Syntax is 'size: path'
 navigation_header:
 - title: Documentation
   url: https://biapy.readthedocs.io/en/latest/
-- title: Tutorials
-  url: /tutorials/
 - title: Github
   url: https://github.com/BiaPyX/BiaPy
 - title: About
