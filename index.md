@@ -53,7 +53,7 @@ carousels:
         <p style="margin-top: 2rem;">
         Please install <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a> to use the GUI following <a id="gui_docker_inst_bn" href="" target="_blank" rel="noopener noreferrer">these instructions</a>. 
         <br>
-        Find a instructions on how to use the GUI <a href="https://www.youtube.com/watch?v=Gnm-VsZQ6Cc&t=41m51s" target="_blank" rel="noopener noreferrer">in this video</a>.
+        Find instructions on how to use the GUI <a href="https://www.youtube.com/watch?v=Gnm-VsZQ6Cc&t=41m51s" target="_blank" rel="noopener noreferrer">in this video</a>.
         </p>
     </div>
     <div style="width: 60%; float:left">
@@ -206,7 +206,7 @@ mamba install pytz asciitree tzdata typer tqdm torchinfo tifffile threadpoolctl 
 Install packages not available on conda-forge, so install it via pip: 
 
 ```bash 
-pip install fill-voids pytorch_msssim opencv-python==4.8.0.76 opencv-python-headless imagecodecs==2024.1.1 numpy==1.25.2 pooch==1.8.1 tensorboardX==2.6.2.2 yacs==0.1.8 edt==2.3.2
+pip install fill-voids pytorch_msssim opencv-python==4.8.0.76 opencv-python-headless imagecodecs==2024.1.1 numpy==1.25.2 pooch tensorboardX==2.6.2.2 yacs==0.1.8 edt==2.3.2
 ```
 
 Install BiaPy: 
