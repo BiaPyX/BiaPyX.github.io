@@ -81,7 +81,7 @@ We have two container prepared to run BiaPy, one for the actual NVIDIA driver ve
                 <i class="fa-brands fa-docker card-icon biapy-colour"></i>
                 <table>
                     <tr>
-                        <td>Pytorch</td> <td>2.2</td>
+                        <td>Pytorch</td> <td>2.4.0</td>
                     </tr>
                     <tr>
                         <td>CUDA</td> <td>11.8</td>
