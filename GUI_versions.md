@@ -6,15 +6,62 @@ feature_image: ../assets/images/banner/banner_back.jpg
 
 ### Installing previous versions of BiaPy's graphical user interface
 
-<table style="width: 80%;" class="styled-table" id="biapy-gui-versions">
+<table style="width: 90%;" class="styled-table" id="biapy-gui-versions">
   <thead>
     <tr>
       <th>Date</th>
       <th>BiaPy-GUI version</th>
       <th>Links</th>
+      <th>Release notes</th>
       <th>Supported containers</th>
     </tr>
   </thead>
+  <tr name="v1.1.3" class="active-row">
+    <td>2024 October 21</td>
+    <td>v1.1.3 (latest)</td>
+    <td>
+      <table>
+          <tr>
+            <td>
+              <span class="win-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1iV0wzdFhpCpBCBgsameGyT3iFyQ6av5o" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Windows
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="linux-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=13jllkLTR6S3yVZLRdMwhWUu7lq3HyJsD" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Linux
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="mac-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1fIpj9A8SWIN1fABEUAS--DNhOHzqSL7f" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  macOS
+                  </a>
+              </span>
+            </td>
+          </tr>
+      </table>
+    </td>
+    <td>
+    <a href="https://github.com/BiaPyX/BiaPy-GUI/releases/tag/v1.1.3" target="_blank" rel="noopener noreferrer">Version notes</a>
+    </td>
+    <td>
+      <table style="align='left';vertical-align: top;" class="styled-table_inside">
+        <tr>
+          <td id="latest-container-version">
+            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.5-11.8/images/sha256-fdff858871f34eca1fe579c50ab4c8f8f44a65c6d4c2c119c7c87e567839a79d?context=repo" target="_blank" rel="noopener noreferrer">v3.5.5</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.5" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
   <tr name="v1.1.2">
     <td>2024 October 10</td>
     <td>v1.1.2</td>
@@ -49,15 +96,18 @@ feature_image: ../assets/images/banner/banner_back.jpg
       </table>
     </td>
     <td>
+    <a href="https://github.com/BiaPyX/BiaPy-GUI/releases/tag/v1.1.2" target="_blank" rel="noopener noreferrer">Version notes</a>
+    </td>
+    <td>
       <table class="styled-table_inside">
         <tr>
           <td id="latest-container-version">
-            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.5-11.8/images/sha256-fdff858871f34eca1fe579c50ab4c8f8f44a65c6d4c2c119c7c87e567839a79d?context=repo" target="_blank" rel="noopener noreferrer">v3.5.5</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.5" target="_blank" rel="noopener noreferrer">(code release notes)</a>
+            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.5-11.8/images/sha256-fdff858871f34eca1fe579c50ab4c8f8f44a65c6d4c2c119c7c87e567839a79d?context=repo" target="_blank" rel="noopener noreferrer">v3.5.5</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.5" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
           </td>
         </tr>
         <tr>
           <td>
-            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.4-11.8/images/sha256-acbf914d2e63b6f223515980fb3faa1af1d247ae27cd4470d5cddc149d5332ab?context=repo" target="_blank" rel="noopener noreferrer">v3.5.4</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.4" target="_blank" rel="noopener noreferrer">(code release notes)</a>
+            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.4-11.8/images/sha256-acbf914d2e63b6f223515980fb3faa1af1d247ae27cd4470d5cddc149d5332ab?context=repo" target="_blank" rel="noopener noreferrer">v3.5.4</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.4" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
           </td>
         </tr>
       </table>
@@ -84,6 +134,7 @@ feature_image: ../assets/images/banner/banner_back.jpg
 .styled-table th,
 .styled-table td {
     padding: 12px 15px;
+    align="left";
 }
 
 .styled-table tbody tr:nth-of-type(even) {
@@ -93,7 +144,14 @@ feature_image: ../assets/images/banner/banner_back.jpg
 .styled-table_inside tbody tr:nth-of-type(even) {
     background-color: transparent;
 }
-
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #009879;
+}
+.styled-table tbody tr.active-row a {
+    font-weight: bold;
+    color: #009879;
+}
 </style>
 <script>
 const win_path = "M14.687 16.75h16.309v14.246l-16.12-2.251zM1.004 16.75h12.184v11.81l-12.184-1.69zM14.687 3.44l16.309-2.436v14.246h-16.309zM1.004 5.314l12.184-1.686v11.81h-12.184z"
