@@ -55,6 +55,9 @@ carousels:
         <br>
         Find instructions on how to use the GUI <a href="https://www.youtube.com/watch?v=Gnm-VsZQ6Cc&t=41m51s" target="_blank" rel="noopener noreferrer">in this video</a>.
         </p>
+        <p>
+        You can also <a href="/GUI_versions/" target="_blank" rel="noopener noreferrer">install previous versions of BiaPy's graphical user interface</a>. 
+        </p>
     </div>
     <div style="width: 60%; float:left">
         {% include carousel.html height="50" unit="%" duration="7" number="1" %}
@@ -328,7 +331,6 @@ python -c 'import torch; print(torch.cuda.is_available())'
 </div>
 
 <script>
-
 var OSName = "Unknown";
 if (window.navigator.userAgent.indexOf("Windows") != -1) {
     OSName="windows";

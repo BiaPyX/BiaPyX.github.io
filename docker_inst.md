@@ -1,6 +1,6 @@
 ---
 layout: centered_article
-feature_image: assets/images/banner/banner_back.jpg
+feature_image: ../assets/images/banner/banner_back.jpg
 ---
 
 <h4> <a id="win_install" href="#win_install">Docker installation on Windows</a> </h4>
