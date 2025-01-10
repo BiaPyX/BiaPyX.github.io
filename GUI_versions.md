@@ -16,9 +16,9 @@ feature_image: ../assets/images/banner/banner_back.jpg
       <th>Supported containers</th>
     </tr>
   </thead>
-  <tr name="v1.1.4" class="active-row">
-    <td>2024 November 28</td>
-    <td>v1.1.4 (latest)</td>
+  <tr name="v1.1.5" class="active-row">
+    <td>2025 January 10</td>
+    <td>v1.1.5 (latest)</td>
     <td>
       <table>
           <tr>
@@ -41,6 +41,52 @@ feature_image: ../assets/images/banner/banner_back.jpg
             <td>
               <span class="mac-bn">
                   <a href="https://drive.google.com/uc?export=download&id=1fIpj9A8SWIN1fABEUAS--DNhOHzqSL7f" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  macOS
+                  </a>
+              </span>
+            </td>
+          </tr>
+      </table>
+    </td>
+    <td>
+    <a href="https://github.com/BiaPyX/BiaPy-GUI/releases/tag/v1.1.5" target="_blank" rel="noopener noreferrer">Version notes</a>
+    </td>
+    <td>
+      <table style="align='left';vertical-align: top;" class="styled-table_inside">
+        <tr>
+          <td id="latest-container-version">
+            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.6-11.8/images/sha256-ba8ec78a78ee75c6836680faa6b1b6ee8ae9508c19e0f3154a8d52582b92dc16" target="_blank" rel="noopener noreferrer">v3.5.6</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.6" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr name="v1.1.4">
+    <td>2024 November 28</td>
+    <td>v1.1.4</td>
+    <td>
+      <table>
+          <tr>
+            <td>
+              <span class="win-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=17t93LUj7JEfWjb2xDNUMFC7WI9ATVXV3" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Windows
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="linux-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1gvv6LxNTwpy3VDGVOqFQ45VPmjdjRmSb" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Linux
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="mac-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1bOYbXifcHaB7Eem0XhzuPM9AvdMax5Rq" target="_blank" rel="noopener noreferrer">
                   <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
                   macOS
                   </a>
