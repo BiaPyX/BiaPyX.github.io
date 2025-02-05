@@ -56,6 +56,11 @@ feature_image: ../assets/images/banner/banner_back.jpg
       <table style="align='left';vertical-align: top;" class="styled-table_inside">
         <tr>
           <td id="latest-container-version">
+            <a href="https://hub.docker.com/layers/biapyx/biapy/3.5.10-11.8/images/sha256-839f26fa071436593fb30a4baf877a3f5b16cdef72b139daffb38d9fc1163b03" target="_blank" rel="noopener noreferrer">v3.5.10</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.10" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
             <a href="https://hubgw.docker.com/layers/biapyx/biapy/3.5.9-11.8/images/sha256-7a1c4fe193a5df22c86f4703c9a917ea52720c1fb6405ffe5583c979e50553e5" target="_blank" rel="noopener noreferrer">v3.5.9</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.9" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
           </td>
         </tr>
