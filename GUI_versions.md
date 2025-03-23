@@ -67,7 +67,7 @@ feature_image: ../assets/images/banner/banner_back.jpg
       </table>
     </td>
   </tr>
-  <tr name="v1.1.6" class="active-row">
+  <tr name="v1.1.6">
     <td>2025 February 1</td>
     <td>v1.1.6</td>
     <td>
