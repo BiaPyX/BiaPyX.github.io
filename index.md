@@ -16,7 +16,8 @@ carousels:
         <h1>BiaPy</h1>
         <h3>Accessible deep learning on bioimages</h3>
         <a href="https://github.com/BiaPyX/BiaPy/releases/latest" target="_blank" rel="noopener noreferrer">Latest release notes</a>
-        <p dir="auto">🔥<strong>NEWS</strong>🔥: Check out our last <a href="https://www.biorxiv.org/content/10.1101/2024.02.03.576026v2"  target="_blank" rel="noopener noreferrer"><strong>bioRxiv preprint</strong></a>!  </p>
+        <p dir="auto">🔥<strong>NEWS</strong>🔥: BiaPy's paper is finally out in <a href="https://www.nature.com/articles/s41592-025-02699-y"  target="_blank" rel="noopener noreferrer"><strong>Nature Methods</strong></a>! <br>
+        [Preprint in <a href="https://www.biorxiv.org/content/10.1101/2024.02.03.576026v3"  target="_blank" rel="noopener noreferrer"><strong>bioRxiv</strong></a>]</p>
     </div>
 </div>
 
