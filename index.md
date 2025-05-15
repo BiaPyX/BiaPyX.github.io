@@ -298,7 +298,7 @@ python -c 'import torch; print(torch.cuda.is_available())'
 </div>
 
 
-<div id="four-icons" class="three-icon-frame last_item central_width">
+<div id="four-icons" class="three-icon-frame last_item">
     <ul class="feature-icons">
         <li>
             <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to learn more about biapy" class="icons-color blue1-color">
