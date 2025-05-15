@@ -88,14 +88,13 @@
   cursor: pointer;
   border-width: 5px 5px 0 0;
   border-style: solid;
-  border-color: #fafafa;
+  border-color: #473838;
   opacity: 0.35;
-  opacity: 1;
   outline: 0;
   z-index: 3;
 }
 .carousel__control:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 .carousel__control--backward {
   left: 20px;
@@ -168,7 +167,7 @@
   width: 30px;
 }
 .carousel__indicator {
-  background-color: #fafafa;
+  background-color: #473838;
 }
 {% for item in page.carousels[number].images %}
 .carousel__slide:nth-of-type({{ forloop.index }}),

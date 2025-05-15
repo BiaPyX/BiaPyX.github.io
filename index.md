@@ -298,39 +298,39 @@ python -c 'import torch; print(torch.cuda.is_available())'
 </div>
 
 
-<div id="three-icons" class="three-icon-frame last_item">
+<div id="four-icons" class="three-icon-frame last_item central_width">
     <ul class="feature-icons">
         <li>
             <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to learn more about biapy" class="icons-color blue1-color">
                     <img src="../assets/images/icons/file-lines-regular.svg" class="docs-icon" alt="docs icon">
             </a>
-            <h4><a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to learn more about biapy">Docs</a>
+            <h4><a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="four-icons-title" aria-label="follow this link to learn more about biapy">Docs</a>
             </h4>
-            <p class="three-icons-text">Find BiaPy step-by-step guides, video tutorials and more on <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">ReadTheDocs</a></p>
+            <p class="four-icons-text">Find BiaPy step-by-step guides, video tutorials and more on <a href="https://biapy.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer">ReadTheDocs</a></p>
         </li>
         <li>
             <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to access discussions on the image.sc forum" class="icons-color blue2-color">
                     <img src="../assets/images/icons/comments-regular.svg" class="comment-icon" alt="commnets icon">
             </a>
-            <h4><a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to access discussions on the image.sc forum">Discuss</a>
+            <h4><a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer" class="four-icons-title" aria-label="follow this link to access discussions on the image.sc forum">Discuss</a>
             </h4>
-            <p class="three-icons-text">Join other BiaPy users and search discussions on <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer">image.sc</a></p>
+            <p class="four-icons-text">Join other BiaPy users and search discussions on <a href="https://forum.image.sc/tag/biapy" target="_blank" rel="noopener noreferrer">image.sc</a></p>
         </li>
         <li>
             <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to the biapy github code base" class="icons-color blue3-color">
                     <img src="../assets/images/icons/code-solid.svg" class="code-icon" alt="code icon">
             </a>
-            <h4><a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to the biapy github code base">Develop</a>
+            <h4><a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer" class="four-icons-title" aria-label="follow this link to the biapy github code base">Develop</a>
             </h4>
-            <p class="three-icons-text">Check out BiaPy's source code on <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+            <p class="four-icons-text">Check out BiaPy's source code on <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">GitHub</a></p>
         </li>
         <li>
             <a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer" tabindex="-1" aria-label="follow this link to the biapy FAQ & Troubleshooting section" class="icons-color blue4-color">
                     <img src="../assets/images/icons/troubleshooting.svg" class="code-icon" alt="code icon">
             </a>
-            <h4><a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer" class="three-icons-title" aria-label="follow this link to the biapy FAQ & Troubleshooting section">Troubleshooting</a>
+            <h4><a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer" class="four-icons-title" aria-label="follow this link to the biapy FAQ & Troubleshooting section">Troubleshooting</a>
             </h4>
-            <p class="three-icons-text">Check out usage tips and documented errors in our <a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer">FAQ & Troubleshooting</a> section</p>
+            <p class="four-icons-text">Check out usage tips and documented errors in our <a href="https://biapy.readthedocs.io/en/latest/get_started/faq.html" target="_blank" rel="noopener noreferrer">FAQ & Troubleshooting</a> section</p>
         </li>
     </ul>
 </div>
