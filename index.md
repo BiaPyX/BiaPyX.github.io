@@ -157,7 +157,7 @@ pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cpu
 
 # Finally install some packages that rely on the Pytorch installation
-pip install timm pytorch-msssim torchmetrics[image]==1.4.*
+pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
 
 The PyPI package does not install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> because there is no option to build that package specifying exactly the CUDA version you want to use. There are a few solutions to set up ``pyproject.toml`` with poetry and specify the CUDA version, as discussed <a href="https://github.com/python-poetry/poetry/issues/6409" target="_blank" rel="noopener noreferrer">here</a>, but then PyPI package can not be built (as stated <a href="https://peps.python.org/pep-0440/#direct-references" target="_blank" rel="noopener noreferrer">here</a>).
@@ -198,7 +198,7 @@ mamba install pytorch::pytorch torchvision torchaudio -c pytorch
 Then, add extra pytorch related packages: 
 
 ```bash
-mamba install timm torchmetrics
+mamba install timm==1.0.14 torchmetrics
 ```
 
 Install BiaPy Dependencies: 
@@ -254,7 +254,7 @@ pip install --editable .
 
 # Install Pytorch and GPU dependencies
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
-pip install timm pytorch-msssim torchmetrics[image]==1.4.*
+pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
 {% endtab %}
 
@@ -265,7 +265,7 @@ pip install --editable .
 
 # Install Pytorch and GPU dependencies
 pip install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
-pip install timm pytorch-msssim torchmetrics[image]==1.4.*
+pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
 {% endtab %}
 <!-- command_line_CUDA_installation -->
