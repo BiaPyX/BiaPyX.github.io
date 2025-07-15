@@ -75,7 +75,7 @@ carousels:
 {% tab installation Docker %}
 
 <span id="docker-description" >
-We have two container prepared to run BiaPy, one for the actual NVIDIA driver versions and another container for old drivers: 
+We have a container prepared to run BiaPy: 
 
 <div class="docker-container-gallery">
     <div class="grid grid-cols-2 gap-4 p-6">
@@ -96,28 +96,8 @@ We have two container prepared to run BiaPy, one for the actual NVIDIA driver ve
                 </table>
             </div>
         </div>
-        <div onclick="window.open('https://hub.docker.com/layers/biapyx/biapy/latest-10.2/images/sha256-c437972cfe30909879085ffd1769666d11875f0ff239df3100fa04ea056d09ab?context=repo');" class="flex h-full flex-col gap-2 rounded border-gray-light-100 bg-gray bg-white p-4 drop-shadow-sm hover:border-gray-light-200 hover:drop-shadow-lg container-card">
-            <div>
-                <b>latest-10.2</b><br>
-                <i class="fa-brands fa-docker card-icon biapy-colour"></i>
-                <table>
-                    <tr>
-                        <td>Pytorch</td> <td>1.12.1</td>
-                    </tr>
-                    <tr>
-                        <td>CUDA</td> <td>10.2</td>
-                    </tr>
-                    <tr>
-                        <td>Ubuntu</td> <td>20.04</td>
-                    </tr>
-                </table>
-            </div>
-        </div>
     </div>
 </div>
-
-
-You need to check the CUDA version that you NVIDIA driver can handle. You can do that with ``nvidia-smi`` command in Linux/macOS or by running ``NVIDIA Control Panel`` in Windows. The driver information will tell you the maximum CUDA version it can handle. Select one of the above containers depending on your GPU driver. For instance, if the CUDA version it can handle is ``12.0`` you can use ``biapyx/biapy:latest-11.8`` container. 
 
 Docker Engine is available for Windows, macOS, and Linux, through Docker Desktop. For instructions on how to install Docker Desktop, see:
 
@@ -243,11 +223,8 @@ Once you have installed Anaconda and git, you will need to <a href="/add_ins/#op
 git clone https://github.com/BiaPyX/BiaPy.git
 ```
 
-This will create a folder called ``BiaPy`` that contains all the files of the <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">library's official repository</a>. Then you will need to install BiaPy dependencies and for that you need to check the CUDA version that your NVIDIA driver can handle. You can do that with ``nvidia-smi`` command in Linux/macOS or by running ``NVIDIA Control Panel`` in Windows. The driver information will tell you the maximum CUDA version it can handle. We here provide two stable installations, one based in CUDA ``11.8`` and another one with an older version of Pytorch and with CUDA ``10.2`` (BiaPy will work anyway). Once you have checked it, proceed with the installation depending on the CUDA version: 
+This will create a folder called ``BiaPy`` that contains all the files of the <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">library's official repository</a>. Then you will need to install BiaPy dependencies: 
 
-{% tabs command_line_CUDA_installation %}
-
-{% tab command_line_CUDA_installation CUDA 11.8 %}
 ```bash
 cd BiaPy
 pip install --editable .
@@ -256,20 +233,6 @@ pip install --editable .
 pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
 pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
-{% endtab %}
-
-{% tab command_line_CUDA_installation CUDA 10.2 %}
-```bash
-cd BiaPy
-pip install --editable .
-
-# Install Pytorch and GPU dependencies
-pip install pytorch==1.12.1 torchvision==0.13.1 torchaudio==0.12.1 cudatoolkit=10.2 -c pytorch
-pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
-```
-{% endtab %}
-<!-- command_line_CUDA_installation -->
-{% endtabs %} 
 
 <!-- command_line_installation option 3 -->
 {% endtab %}
