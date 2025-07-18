@@ -128,16 +128,14 @@ conda activate BiaPy_env
 Then you will need to install <a href="https://pypi.org/project/biapy/" target="_blank" rel="noopener noreferrer">BiaPy package</a> and <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a>: 
 
 ```bash
+# Pytorch installation with GPU support: Pytorch 2.4.0 + CUDA 11.8
+pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu118 
+
+# Pytorch installation with ONLY CPU support: Pytorch 2.4.0 
+pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cpu
+
+# Finally install BiaPy
 pip install biapy
-
-# To install with GPU support: Pytorch 2.4.0 + CUDA 11.8
-pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
-
-# Only CPU support: Pytorch 2.4.0 
-pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cpu
-
-# Finally install some packages that rely on the Pytorch installation
-pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
 
 The PyPI package does not install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> because there is no option to build that package specifying exactly the CUDA version you want to use. There are a few solutions to set up ``pyproject.toml`` with poetry and specify the CUDA version, as discussed <a href="https://github.com/python-poetry/poetry/issues/6409" target="_blank" rel="noopener noreferrer">here</a>, but then PyPI package can not be built (as stated <a href="https://peps.python.org/pep-0440/#direct-references" target="_blank" rel="noopener noreferrer">here</a>).
@@ -166,19 +164,13 @@ mamba activate BiaPy_env
 Now you need to install <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> and related packages. Double check <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch's official page</a> for its specific installation. For example, to install the lastest version of <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">Pytorch</a> with ``conda`` installation in Windows OS under CUDA 12.1: 
 
 ```bash
-mamba install pytorch torchvision torchaudio pytorch-cuda=12.1 -c pytorch -c nvidia
+mamba install pytorch torchvision pytorch-cuda=12.1 -c pytorch -c nvidia
 ```
 
 Alternatively, for macOS it would be like this:
 
 ```bash
-mamba install pytorch::pytorch torchvision torchaudio -c pytorch
-```
-
-Then, add extra pytorch related packages: 
-
-```bash
-mamba install timm==1.0.14 torchmetrics
+mamba install pytorch::pytorch torchvision -c pytorch
 ```
 
 Install BiaPy Dependencies: 
@@ -188,13 +180,13 @@ mamba install pytz asciitree tzdata typer tqdm torchinfo tifffile threadpoolctl
 mamba install six Shapely scipy ruamel.yaml.clib pyparsing protobuf numcodecs lazy_loader kiwisolver
 mamba install joblib h5py fonttools fastremap fasteners cycler contourpy zarr=2.16.1 scikit-learn=1.4.0
 mamba install scikit-image ruamel.yaml python-dateutil pydot=1.4.2 pandas matplotlib xarray imgaug yaml
-mamba install bioimageio.spec bioimageio.core=0.7.0
+mamba install bioimageio.spec bioimageio.core=0.9.0
 ```
 
 Install packages not available on conda-forge, so install it via pip: 
 
 ```bash 
-pip install fill-voids pytorch_msssim opencv-python opencv-python-headless imagecodecs==2024.1.1 numpy==1.25.2 pooch tensorboardX==2.6.2.2 yacs==0.1.8 edt==2.3.2
+pip install fill-voids pytorch_msssim opencv-python opencv-python-headless imagecodecs==2024.1.1 "numpy>=2" pooch tensorboardX==2.6.2.2 yacs==0.1.8 edt==2.3.2
 ```
 
 Install BiaPy: 
@@ -226,12 +218,12 @@ git clone https://github.com/BiaPyX/BiaPy.git
 This will create a folder called ``BiaPy`` that contains all the files of the <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">library's official repository</a>. Then you will need to install BiaPy dependencies: 
 
 ```bash
+# Install Pytorch and GPU dependencies
+pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu118 
+
+# Then install BiaPy
 cd BiaPy
 pip install --editable .
-
-# Install Pytorch and GPU dependencies
-pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu118 
-pip install timm==1.0.14 pytorch-msssim torchmetrics[image]==1.4.*
 ```
 
 <!-- command_line_installation option 3 -->
