@@ -26,4 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jemoji", "~> 0.12"
   spec.add_runtime_dependency "jekyll-tabs", "~> 1.2.0"
+  spec.add_runtime_dependency "jekyll-sass-converter", "~> 2.2"
+  spec.add_runtime_dependency "sassc", "~> 2.4"
 end
