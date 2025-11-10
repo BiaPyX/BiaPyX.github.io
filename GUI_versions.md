@@ -16,9 +16,60 @@ feature_image: ../assets/images/banner/banner_back.jpg
       <th>Supported containers</th>
     </tr>
   </thead>
+  <tr name="v1.2.0" class="active-row">
+    <td>2025 November 2</td>
+    <td>v1.2.0 (latest)</td>
+    <td>
+      <table>
+          <tr>
+            <td>
+              <span class="win-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1axB942is6ik4nAQxUWoIYAOm2sjxm8OX" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Windows
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="linux-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=19nK3jerL9_1g8phtyqYsRuLCOSA_4s_K" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  Linux
+                  </a>
+              </span>
+            </td>
+            <td>
+              <span class="mac-bn">
+                  <a href="https://drive.google.com/uc?export=download&id=1g8sLzUtFwZsXYLnb-oiTB3jE8xj7drxn" target="_blank" rel="noopener noreferrer">
+                  <svg role="img" viewBox="0 0 32 32" width="42" height="42" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="" fill="#000"></path></svg>
+                  macOS
+                  </a>
+              </span>
+            </td>
+          </tr>
+      </table>
+    </td>
+    <td>
+    <a href="https://github.com/BiaPyX/BiaPy-GUI/releases/tag/v1.2.0" target="_blank" rel="noopener noreferrer">Version notes</a>
+    </td>
+    <td>
+      <table style="align='left';vertical-align: top;" class="styled-table_inside">
+        <tr>
+          <td id="latest-container-version">
+            <a href="https://hub.docker.com/repository/docker/biapyx/biapy/tags/3.5.12-11.8/sha256-2a0a8be286ca15ecfeb7ccf5c7586c6ec79a1319d9ae63b4aaac8fd969845c47" target="_blank" rel="noopener noreferrer">v3.5.12</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.12" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://hub.docker.com/repository/docker/biapyx/biapy/tags/3.5.11-11.8/sha256-e02db915be434fa875c1ce0f5751c7339bab5714d42ae5369b1d79bd7ad40bc8" target="_blank" rel="noopener noreferrer">v3.5.11</a> &nbsp;&nbsp;<a href="https://github.com/BiaPyX/BiaPy/releases/tag/v3.5.11" target="_blank" rel="noopener noreferrer">(BiaPy code release notes)</a>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
   <tr name="v1.1.7" class="active-row">
     <td>2025 March 18</td>
-    <td>v1.1.7 (latest)</td>
+    <td>v1.1.7</td>
     <td>
       <table>
           <tr>
