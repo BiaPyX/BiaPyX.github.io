@@ -1,4 +1,7 @@
 source "https://rubygems.org"
 
-gem "github-pages", group: :jekyll_plugins
-gem "sass-embedded", "~> 1.86.2"   # known-good series for GH Actions
+# Use the dependency set that GitHub Pages expects:
+gem "github-pages", "~> 232", group: :jekyll_plugins
+
+# For local `bundle exec jekyll serve` on Ruby 3.x:
+gem "webrick", "~> 1.8"
