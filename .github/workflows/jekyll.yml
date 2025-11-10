@@ -39,7 +39,7 @@ jobs:
           ruby-version: '3.1'
           rubygems: 'latest'     # ensures RubyGems >= 3.3.22
           bundler: 'latest'      # ensures Bundler >= 2.3.22
-          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+          bundler-cache: false
           cache-version: 1
       - name: Setup Pages
         id: pages
