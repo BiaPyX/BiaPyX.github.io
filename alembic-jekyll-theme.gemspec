@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|_layouts|_includes|_sass|LICENSE|README|sw|manifest)}i) }
 
-  spec.add_runtime_dependency "jekyll", "~> 4.1"
+  spec.add_runtime_dependency "jekyll", "~> 4.4"
   spec.add_runtime_dependency "jekyll-sitemap", "~> 1.4.0"
   spec.add_runtime_dependency "jekyll-mentions", "~> 1.6.0"
   spec.add_runtime_dependency "jekyll-paginate", "~> 1.1.0"
@@ -26,6 +26,6 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency "jekyll-include-cache", "~> 0.2"
   spec.add_runtime_dependency "jemoji", "~> 0.12"
   spec.add_runtime_dependency "jekyll-tabs", "~> 1.2.0"
-  spec.add_runtime_dependency "jekyll-sass-converter", "~> 2.2"
+  spec.add_runtime_dependency "jekyll-sass-converter", "~> 3.0"
   spec.add_runtime_dependency "sassc", "~> 2.4"
 end
