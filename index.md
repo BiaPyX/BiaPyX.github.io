@@ -85,7 +85,7 @@ We have a container prepared to run BiaPy:
                 <i class="fa-brands fa-docker card-icon biapy-colour"></i>
                 <table>
                     <tr>
-                        <td>Pytorch</td> <td>2.4.0</td>
+                        <td>Pytorch</td> <td>2.9.1</td>
                     </tr>
                     <tr>
                         <td>CUDA</td> <td>11.8</td>
@@ -168,7 +168,7 @@ This will create a folder called ``BiaPy`` that contains all the files of the <a
 
 ```bash
 # Install Pytorch and GPU dependencies
-pip install torch==2.4.0 torchvision==0.19.0 --index-url https://download.pytorch.org/whl/cu118 
+pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu118 
 
 # Then install BiaPy
 cd BiaPy
