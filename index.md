@@ -185,7 +185,7 @@ Verify installation:
 
 ```bash
 python -c 'import torch; print(torch.__version__)'
->>> 2.4.0
+>>> 2.9.1
 python -c 'import torch; print(torch.cuda.is_available())'
 >>> True
 ```
