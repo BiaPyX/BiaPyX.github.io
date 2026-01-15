@@ -118,10 +118,31 @@ You have three different options to install BiaPy. Choose one or another dependi
 
 {% tab command_line_installation Option 1: Conda %}
 
-To use BiaPy via the command line, you will need to set up a ``conda`` environment. To do this, you will first need to install <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
+To use BiaPy via the command line, you will need to set up a ``conda`` environment. To do this, you will first need to install <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a>. Then choose one of the following options based on your machine capabilities:
+
+**A. GPU-capable machine (NVIDIA GPU)**
 
 ```bash
-conda create -n biapy-env -c conda-forge biapy
+conda config --set channel_priority strict
+conda create -n BiaPy_env -c conda-forge python=3.11 biapy pytorch-gpu
+conda activate BiaPy_env
+```
+
+Verify GPU at runtime:
+
+```bash
+python -c 'import torch; print(torch.__version__)'
+>>> 2.9.1
+python -c 'import torch; print(torch.cuda.is_available())'
+>>> True
+```
+
+**B. CPU-only machine**
+
+```bash
+conda config --set channel_priority strict
+conda create -n BiaPy_env -c conda-forge python=3.11 biapy
+conda activate BiaPy_env
 ```
 
 <!-- command_line_installation option 1 -->
@@ -129,19 +150,29 @@ conda create -n biapy-env -c conda-forge biapy
 
 {% tab command_line_installation Option 2: Mamba %}
 
-Before you begin, ensure you have <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> installed. <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> is a faster alternative to <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a> and can be used to manage your ``conda`` environments. Install ``mamba`` in the base ``conda`` environment, allowing you to use it across all your environments.
+Before you begin, ensure you have <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> installed. <a href="https://github.com/mamba-org/mamba" target="_blank" rel="noopener noreferrer">Mamba</a> is a faster alternative to <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a> and can be used to manage your ``conda`` environments.Once you have mamba installed you will to choose one of the following options based on your machine capabilities:
 
-
-If you don't have ``conda`` installed you can download <a href="https://github.com/conda-forge/miniforge#mambaforge" target="_blank" rel="noopener noreferrer">the miniforge installer</a> specific to your OS and run it. Otherwise, if you have ``conda`` already installed just type:
+**A. GPU-capable machine (NVIDIA GPU)**
 
 ```bash
-conda install mamba -n base -c conda-forge
+mamba create -n BiaPy_env -c conda-forge python=3.11 biapy pytorch-gpu
+mamba activate BiaPy_env
 ```
 
-Afterwards, create a new <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a> environment with BiaPy: 
+Verify GPU at runtime:
 
 ```bash
-mamba create -n biapy-env -c conda-forge biapy
+python -c 'import torch; print(torch.__version__)'
+>>> 2.9.1
+python -c 'import torch; print(torch.cuda.is_available())'
+>>> True
+```
+
+**B. CPU-only machine**
+
+```bash
+mamba create -n BiaPy_env -c conda-forge python=3.11 biapy
+mamba activate BiaPy_env
 ```
 
 <!-- command_line_installation option 2 -->
@@ -149,28 +180,28 @@ mamba create -n biapy-env -c conda-forge biapy
 
 {% tab command_line_installation Option 3: Developer %}
 
-Set up a ``conda`` environment first by installing <a href="https://docs.conda.io/projects/conda/en/stable/" target="_blank" rel="noopener noreferrer">Conda</a>. Then you need to create a ``conda`` environment <a href="/add_ins/#open_terminal">through a terminal</a>:
+Set up a conda/mamba environment:
 
 ```bash
-conda create -n BiaPy_env python=3.10
-conda activate BiaPy_env
+mamba create -n BiaPy_env -c conda-forge python=3.11
+mamba activate BiaPy_env
 ```
 
-To clone the repository you will need to install <a href="https://git-scm.com/" target="_blank" rel="noopener noreferrer">git</a>, a free and open source distributed version control system. Git will allow you to easily download the code with a single command. You can download and install it <a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreferrer">here</a>. For detailed installation instructions based on your operating system, please see the following links: <a href="https://git-scm.com/download/win" target="_blank" rel="noopener noreferrer">Windows</a>, <a href="https://git-scm.com/download/mac" target="_blank" rel="noopener noreferrer">macOS</a> and <a href="https://git-scm.com/download/linux" target="_blank" rel="noopener noreferrer">Linux</a>. 
-
-Once you have installed Anaconda and git, you will need to <a href="/add_ins/#open_terminal">open a terminal</a> to complete the following steps. Then, you are prepared to download <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">BiaPy</a> repository by running this command in the terminal:
+Clone BiaPy repository:
 
 ```bash
 git clone https://github.com/BiaPyX/BiaPy.git
 ```
 
-This will create a folder called ``BiaPy`` that contains all the files of the <a href="https://github.com/BiaPyX/BiaPy" target="_blank" rel="noopener noreferrer">library's official repository</a>. Then you will need to install BiaPy dependencies: 
+Install PyTorch first, choosing GPU if available. Use the official <a href="https://pytorch.org/get-started/locally/" target="_blank" rel="noopener noreferrer">PyTorch selector</a> for your platform (CUDA / ROCm / CPU). Example (CUDA, just as an example-use the selector’s exact command):
 
 ```bash
-# Install Pytorch and GPU dependencies
-pip install torch==2.9.1 torchvision==0.24.1 --index-url https://download.pytorch.org/whl/cu118 
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
 
-# Then install BiaPy
+Install BiaPy in editable mode:
+
+```bash
 cd BiaPy
 pip install --editable .
 ```
@@ -180,15 +211,6 @@ pip install --editable .
 
 <!-- command_line_installation -->
 {% endtabs %}
-
-Verify installation: 
-
-```bash
-python -c 'import torch; print(torch.__version__)'
->>> 2.9.1
-python -c 'import torch; print(torch.cuda.is_available())'
->>> True
-```
 
 <!-- installation Command line  -->
 {% endtab %}
