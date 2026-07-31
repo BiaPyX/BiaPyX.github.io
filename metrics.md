@@ -81,16 +81,16 @@ User metrics, analytics and service uptime
         </tr>
         <tr>
             <td>
-                <a href="https://github.com/BiaPyX/BiaPy.github.io">BiaPy.github.io</a>
+                <a href="https://github.com/BiaPyX/BiaPyX.github.io">BiaPyX.github.io</a>
             </td>
             <td>
-                <img src="https://img.shields.io/github/stars/BiaPyX/BiaPy.github.io" alt="">
+                <img src="https://img.shields.io/github/stars/BiaPyX/BiaPyX.github.io" alt="">
             </td>
             <td>
-                <img src="https://img.shields.io/github/issues-raw/BiaPyX/BiaPy.github.io" alt="">
+                <img src="https://img.shields.io/github/issues-raw/BiaPyX/BiaPyX.github.io" alt="">
             </td>
             <td>
-                <img src="https://img.shields.io/github/last-commit/BiaPyX/BiaPy.github.io" alt="">
+                <img src="https://img.shields.io/github/last-commit/BiaPyX/BiaPyX.github.io" alt="">
             </td>
         </tr>
     </tbody>

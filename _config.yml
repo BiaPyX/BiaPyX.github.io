@@ -69,7 +69,7 @@ encoding: utf-8 # Make sure the encoding is right
 lang: en-GB # Set the site language
 logo: "/assets/logos/logo.svg" # Site logo, also used in jekyll-seo-tag
 description: "BiaPy is an open source Python library for building bioimage analysis pipelines" # Site description and default description, also used in jekyll-seo-tag
-url: "https://github.com/BiaPyX/BiaPy" # Site url, also used in jekyll-seo-tag
+url: "https://biapyx.github.io" # Site url, also used in jekyll-seo-tag
 baseurl: ""
 # repo: "https://github.com/BiaPyX/BiaPy"
 email: "biapy.team@gmail.com"

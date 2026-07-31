@@ -22,7 +22,7 @@ Once the installation ends it will ask for a username and a password. This is no
 Then you need to make Ubuntu the default Linux distribution. List installed Linux distributions typing:
 
 ```
-wsl --list -verbose
+wsl --list --verbose
 ```
 
 The one with * is the default configuration. So, if it is not Ubuntu, it can be changed by using the command:
