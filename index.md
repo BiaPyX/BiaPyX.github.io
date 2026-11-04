@@ -2,10 +2,14 @@
 feature_image: ../assets/images/banner/banner_back.jpg
 carousels:
   - images: 
-    - image: ../assets/images/gui1.png
-    - image: ../assets/images/gui2.png
-    - image: ../assets/images/gui3.png
-    - image: ../assets/images/gui4.png
+    - image: ../assets/images/fiji1.png
+    - image: ../assets/images/fiji2.png
+    - image: ../assets/images/fiji3.png
+    - image: ../assets/images/fiji4.png
+    - image: ../assets/images/fiji5.png
+    - image: ../assets/images/fiji6.png
+    - image: ../assets/images/fiji7.png
+    - image: ../assets/images/fiji8.png
 ---
 
 <div class="presentation-frame centered">
@@ -30,6 +34,31 @@ carousels:
 
 
 {% tabs installation %}
+
+{% tab installation Fiji %}
+<div style="height: 50%">
+    <div style="width: 40%; float:left;">
+        <div style="text-align: center;">
+            <a class="button" style="margin-top: 2rem;" href="https://imagej.net/software/fiji/downloads" target="_blank" rel="noopener noreferrer">Download Fiji</a>
+        </div>
+        <p style="margin-top: 2rem;">
+        BiaPy runs inside <a href="https://fiji.sc/" target="_blank" rel="noopener noreferrer">Fiji</a> as a plugin:
+        </p>
+        <ol>
+            <li><b>Help &gt; Update...</b> &gt; <b>Manage update sites</b>.</li>
+            <li><b>Add Unlisted Site</b>: name <code>BiaPy</code>, URL <code>https://sites.imagej.net/BiaPyX/</code>.</li>
+            <li><b>Apply and Close</b> &gt; <b>Apply changes</b>, then restart Fiji.</li>
+            <li><b>Plugins &gt; BiaPy &gt; Run BiaPy</b> and click <b>Install BiaPy</b>.</li>
+        </ol>
+        <p>
+        More about update sites in <a href="https://imagej.net/update-sites/following" target="_blank" rel="noopener noreferrer">Fiji's documentation</a>.
+        </p>
+    </div>
+    <div style="width: 60%; float:left">
+        {% include carousel.html height="70" unit="%" duration="7" number="1" %}
+    </div>
+</div>
+{% endtab %}
 
 {% tab installation GUI %}
 <div style="height: 50%">
@@ -61,7 +90,9 @@ carousels:
         </p>
     </div>
     <div style="width: 60%; float:left">
-        {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+        <p style="margin-top: 2rem;">
+        BiaPy's standalone graphical user interface runs BiaPy through <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">Docker</a>. If you are looking for the easiest way to start, we recommend the <b>Fiji</b> plugin instead.
+        </p>
     </div>
 </div> 
 {% endtab %}
